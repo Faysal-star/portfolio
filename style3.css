@@ -1,0 +1,367 @@
+:root{
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #b6b6b6;
+    --bg-primary: #23232e;
+    --bg-secondary:#141418;
+
+   
+}
+body, html,main {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .img {
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3)), url("bg2img.png");
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .bg{
+      position: relative;
+      height: 300px;
+      width: 300px;
+      float: right;
+      top: 15%;
+      left: -5%;
+      
+  }
+  
+  .txt {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  button {
+      position: absolute;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+ button:hover {
+    background-color: #555;
+    color: white;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+
+  }
+
+  
+
+.div2{
+    margin-left: 5rem;
+    margin-right: 1rem;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 50%;
+    border: 1px solid white;
+    transition: .3s;
+}
+.div2:hover{
+    border:1px solid black;
+    box-shadow:5px 10px #53535786;
+    
+}
+
+.bg2{
+    position: relative;
+    float: left;
+    top: 25%;
+    right: -5%;
+    transition: .3s;
+}
+.text{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+.div2:hover .bg2{
+   top: 22%;
+    
+}
+.div2:hover .text{
+    top: 48%;
+     
+ }
+
+.div3{
+    margin-left: 5rem;
+    margin-right: 1rem;
+    position: relative;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50%;
+    transition: .3s;
+}
+.div3:hover{
+    border:1px solid black;
+    box-shadow:5px 10px #53535786;
+    
+}
+.bg3{
+    position: relative;
+    float: right;
+    height: 300px;
+    width: 300px;
+    top: 25%;
+    transition: .3s;
+}
+.text3{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+.div3:hover .bg3{
+    top: 23%;
+}
+
+.div3:hover .text3{
+    top: 48%;
+}
+
+.div4{
+    margin-left: 5rem;
+    margin-right: 1rem;
+    position: relative;
+    margin-top: 50px;
+    height: 50%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: .3s;
+}
+.div4:hover{
+    border:1px solid black;
+    box-shadow:5px 10px #53535786;
+    
+}
+.bg4{
+    position: relative;
+    float: left;
+    top: 18%;
+    right: -5%;
+    transition: .3s;
+}
+.text4{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.div4:hover .bg4{
+    top: 16%;
+}
+
+.div4:hover .text4{
+    top: 48%;
+}
+
+.footer{
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:var(--bg-secondary);
+    color: white;
+    text-align: center;
+
+}
+
+
+body::-webkit-scrollbar{
+    width: 0.4rem;
+
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient( rgba(0,233,159,1) 0%, rgba(192,99,213,1) 40%, rgba(0,212,255,1) 100%);
+    border-radius: 50px;
+}
+
+.navbar{
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: 0.2s ease;
+    z-index: 9999;
+}
+
+.navbar-nav{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100%;
+} 
+.nav-item{
+    width: 100%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+} 
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: .5s;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background-color: var(--bg-secondary);
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem
+}
+
+.nav-link i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+
+.fu{
+    color: cyan;
+}
+
+.fu{
+    transition: .2s;
+}
+
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    
+
+} 
+
+.logo i{
+    transform:rotate(0deg);
+    transition: .5s;
+}
+
+.navbar:hover .logo i{
+    transform: rotate(-180deg);
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  
+
+
+@media only screen and (min-width:600px) {
+   .navbar{
+        top: 0;
+        width: 4rem;
+        height: 100vh;
+     }
+    .navbar:hover{
+           width: 13rem;
+     }
+    
+    .navbar:hover .link-text{
+        display: block;
+        transition: opacity .5s;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 4rem;
+    
+    }
+    .logo{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    .para{
+        margin: 0;
+    }
+    .div2,.div3,.div4{
+        margin-left: 10px;
+    }
+    .div4{
+        margin-bottom: 5rem;
+    }
+
+}
+ 
